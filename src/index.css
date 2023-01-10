@@ -157,12 +157,12 @@ Slider
   margin-top: 4rem;
   width: 80vw;
   /* have to have a height */
-  height: 450px;
+    height: 450px;
   max-width: 800px;
   text-align: center;
   position: relative;
   display: flex;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .person-img {
   border-radius: 50%;
