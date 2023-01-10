@@ -20,9 +20,18 @@ function App() {
 						<article key={id}>
 							<img src={image} alt={name} className="person-img" />
 							<h4>{name}</h4>
+							<p>{title}</p>
+							<p>{quote}</p>
+							<FaQuoteRight className="icon" />
 						</article>
 					);
 				})}
+				<button className="prev">
+					<FiChevronLeft />
+				</button>
+				<button className="next">
+					<FiChevronRight />
+				</button>
 			</div>
 		</section>
 	);
