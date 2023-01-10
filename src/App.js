@@ -12,14 +12,22 @@ function App() {
 		if (index < 0) {
 			setIndex(lastIndex);
 		}
-		
-    if (index > lastIndex) {
+		if (index > lastIndex) {
 			setIndex(0);
 		}
-  }, [index, people]);
-  
-  //auto slide
-  
+	}, [index, people]);
+
+	//auto slide
+	useEffect(() => {
+		let slider = setInterval(() => {
+			setIndex(index + 1);
+		}, 3000);
+		// do this so it does not trigger
+		// when the button changes the index with the
+		return () => {
+			clearInterval(slider);
+		};
+	}, [index]);
 
 	return (
 		<section className="section">
