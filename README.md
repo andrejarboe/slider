@@ -1,5 +1,7 @@
 # React Testimonial Slider
 
+
+
 This is a React component that displays a testimonial slider. It uses the React Hooks API to display a testimonial slider with a text quote, image, and name of the person who provided the testimonial. It also has a built-in auto-slide feature and navigation buttons to manually move the slider.
 
 
