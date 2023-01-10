@@ -23,7 +23,7 @@ function App() {
 			setIndex(index + 1);
 		}, 3000);
 		// do this so it does not trigger
-		// when the button changes the index with the
+		// when the button changes the index
 		return () => {
 			clearInterval(slider);
 		};
